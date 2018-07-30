@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,600,700,900');
+/* ===============
+    CXL institute
+   =============== */
+
+/* Set up */
+html, body {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+/* /Set up */
+
+
+
+#cxl {}
+    /* Header */
+    #cxl header {
+		width: 100%;
+		height: 62px;
+        overflow: hidden;
+        background: #222222;
+    }
+        /* Logo */
+        #cxl-logo {}
+            #cxl-logo h1 {
+                height: 30px;
+                width: 135px;
+                font-size: 1px;
+                overflow: hidden;
+                margin-top: 16px;
+                text-indent: -999999px;
+                background: url(../img/cxl-institute-logo.png) top center no-repeat;
+                background-size: 134px 30px;
+            }
+        /* Logo */
+        /* Search global */
+        #cxl-search {}
+            #cxl-search form {}
+                #cxl-search input {
+                    width: 100%;
+                    height: 40px;
+                    border: none;
+                    color: #FFFFFF;
+                    font-size: 14px;
+                    margin-top: 10px;
+                    font-weight: 300;
+                    line-height: 40px;
+                    background: url("../img/cxl-icon-search.png") 18px 10px no-repeat #363636;
+                    background-size: 21px 21px;
+                    padding: 0 5px 0 55px;
+                    box-sizing: border-box;
+                }
+                #cxl-search button {
+                    display: none;
+                }
+        /* /Search global */
+        /* User account */
+        #cxl-account {
+            box-sizing: border-box;
+			padding: 0 14px 0 30px;
+		}
+            #cxl-account-name {
+                color: #FFFFFF;
+                font-size: 12px;
+                margin-top: 20px;
+                padding-right: 10px;
+                vertical-align: top;
+                display: inline-block;
+            }
+                #cxl-account-name h5 {
+                    font-weight: 300;
+                }
+                    #cxl-account-name span {
+                        display: block;
+                        font-weight: 700;
+                    }
+			#cxl-account-photo {
+                float: right;
+                width: 35px;
+                height: 35px;
+                overflow: hidden;
+                margin-top: 15px;
+                border-radius: 50%;
+                vertical-align: top;
+                display: inline-block;
+            }
+                #cxl-account-photo img {
+                    width: 35px;
+                    height: auto;
+                    display: block;
+                }
+        /* /User account */
+        /* Lesson Title and Duration */
+        #cxl-lesson {
+            height: 100%;
+            color: #FFFFFF;
+            padding-left: 15px;
+            box-sizing: border-box;
+            border-left: 1px solid #222222;
+        }
+            #cxl-lesson h2 {
+                font-size: 12px;
+                font-weight: 300;
+                padding-top: 15px;
+            }
+                #cxl-lesson span {
+                    display: block;
+                    font-size: 12px;
+                    padding-top: 5px;
+                    font-weight: 700;
+                }
+        /* /Lesson Title and Duration */
+		/* Progress */
+		#cxl-progress {
+            background: #c61a00;
+        }
+            #cxl-progress span {
+                color: #FFFFFF;
+                font-weight: 900;
+            }
+        /* /Progress */
+    /* /Header */
+
+
+
+    /* Content section */
+    #cxl section {
+        width: 100%;
+        display: grid;
+        background: #fcfafa;
+        grid-template-columns: 1fr 344px;
+    }
+        /* Main content */
+        #cxl main {
+            width: 100%;
+            background: #fcfafa;
+            display: inline-block;
+        }
+            /* Breadcrumb */
+            #cxl-breadcrumb {
+                background: #404040;
+            }
+                #cxl-breadcrumb ul {
+                    font-size: 0;
+                }
+                    #cxl-breadcrumb li {
+                        vertical-align: top;
+                        display: inline-block;
+                    }
+                    #cxl-breadcrumb li.level1,
+                    #cxl-breadcrumb li.level2 {
+                        z-index: 10;
+                        position: relative;
+                        background: #606060;
+                    }
+                        #cxl-breadcrumb li.level1:before,
+                        #cxl-breadcrumb li.level2:before {
+                            top: 5px;
+                            z-index: -1;
+                            content: '';
+                            width: 30px;
+                            right: -15px;
+                            height: 30px;
+                            position: absolute;
+                            border-radius: 4px;
+                            background: #606060;
+                            transform: rotate(45deg);
+                        }
+                    #cxl-breadcrumb li.level2 {
+                        z-index: 5;
+                        padding-left: 15px;
+                        background: #4d4d4d;
+                    }
+                        #cxl-breadcrumb li.level2:before {
+                            background: #4d4d4d;
+                        }
+                    #cxl-breadcrumb li.level3 {
+                        padding-left: 15px;
+                    }
+                        #cxl-breadcrumb a {
+                            height: 40px;
+                            color: #B7B7B7;
+                            padding: 0 15px;
+                            font-size: 12px;
+                            line-height: 40px;
+                            text-decoration: none;
+                            display: inline-block;
+                        }
+                            #cxl-breadcrumb span,
+                            #cxl-breadcrumb h4 {
+                                height: 40px;
+                                color: #FFFFFF;
+                                padding: 0 15px;
+                                font-size: 12px;
+                                line-height: 40px;
+                                display: inline-block;
+                            }
+            /* /Breadcrumb */
+            /* Player */
+            #cxl-player {
+                text-align: center;
+                background: #1A1A1A;
+            }
+                #cxl-player img {
+                    width: 800px;
+                }
+            /* /Player */
+            /* Description */
+            #cxl-description {
+                padding: 25px;
+                margin: 0 auto;
+                max-width: 860px;
+                background: #FFFFFF;
+                box-shadow: 0 2px 4px 0 rgba(153,153,153,0.5);
+            }
+                /* Autosroll and Search */
+                #cxl-scrollnsearch {}
+                    /* Scroll */
+                    #cxl-scrollnsearch-scroll {}
+                        #cxl-scrollnsearch-scroll form {}
+                            #cxl-scrollnsearch-scroll label {}
+                                #cxl-scrollnsearch-scroll input {}
+                    /* /Scroll */
+                    /* Search local */
+                    #cxl-scrollnsearch-search {}
+                        #cxl-scrollnsearch-search form {}
+                            #cxl-scrollnsearch-search input {}
+                                #cxl-scrollnsearch-search button {}
+                    /* /Search local */
+                /* /Autosroll and Search */
+                /* Lesson content */
+                #cxl-lessoncontent {
+                    padding-top: 25px;
+                }
+                    #cxl-lessoncontent p {
+                        padding-bottom: 20px;
+                    }
+                /* /Lesson content */
+            /* /Description */
+        /* /Main content */
+        /* Lessons list */
+        #cxl aside {
+            width: 344px;
+            background: #FFFFFF;
+            margin-bottom: 80px;
+            display: inline-block;
+            box-shadow: 0 2px 4px 0 rgba(153,153,153,0.5);
+        }
+            #cxl-listofchapters {
+                padding: 9px 7px 0 0;
+                border-top: 10px solid #C61A00;
+            }
+                /* Level 1 */
+                .cxl-listofchapters-track {}
+                    .cxl-listofchapters-track a {
+                        display: block;
+                        text-decoration: none;
+                    }
+                        .cxl-listofchapters-track h2 {
+                            color: #858585;
+                            font-size: 14px;
+                            font-weight: 400;
+                            padding: 22px 5px 22px 25px;
+                            border-top: 1px solid #EDEDED;
+                            border-right: 1px solid #EDEDED;
+                            border-bottom: 1px solid #EDEDED;
+                        }
+                        .cxl-listofchapters-track a.active h2 {
+                            color: #111111;
+                        }
+                            .cxl-listofchapters-track-name {}
+                            .cxl-listofchapters-track-percent {
+                                font-weight: 700;
+                            }
+                                .cxl-listofchapters-track-percent-value {}
+                /* /Level 1 */
+                    /* Level 2 */
+                    .cxl-listofmodules {}
+                        .cxl-listofmodules-module {
+                            display: block;
+                            padding: 15px 0 20px 0;
+                            box-sizing: border-box;
+                            border-right:  1px solid #EDEDED;
+                            border-bottom: 1px solid #EDEDED;
+                        }
+                            .cxl-listofmodules-module-percent {
+                                width: 38px;
+                                margin: 0 4px 0 8px;
+                                vertical-align: top;
+                                display: inline-block;
+                            }
+                            .cxl-listofmodules-module-promo {
+                                width: 282px;
+                                vertical-align: top;
+                                display: inline-block;
+                            }
+                                .cxl-listofmodules-module-promo h3 {
+                                    color: #2F2F2F;
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                }
+                                    .cxl-listofmodules-module-promo small {
+                                        display: block;
+                                        color: #2F2F2F;
+                                        font-size: 10px;
+                                        margin-top: 4px;
+                                        padding-left: 12px;
+                                        background: url("../img/cxl-icon-clock.svg") center left no-repeat;
+                                        background-size: 9px 9px;
+                                    }
+                                        .cxl-listofmodules-module-promo span {}
+                    /* /Level 2 */
+                        /* Level 3 */
+                        .cxl-listoflessons {
+                            margin-top: 15px;
+                            position: relative;
+                            padding-left: 55px;
+                            border-top: 1px solid #EDEDED;
+                        }
+                            .cxl-listoflessons:before {
+                                top: 0;
+                                left: 23px;
+                                content: '';
+                                bottom: -20px;
+                                position: absolute;
+                                border-left: 3px solid #DBDBDB;
+                            }
+                            .cxl-listoflessons a {
+                                text-decoration: none;
+                            }
+                                .cxl-listoflessons li {
+                                    position: relative;
+                                }
+                                    .cxl-listoflessons li:before {
+                                        top: 50%;
+                                        left: -36px;
+                                        content: '';
+                                        width: 11px;
+                                        height: 11px;
+                                        margin-top: -6px;
+                                        border-radius: 50%;
+                                        position: absolute;
+                                        background: #DBDBDB;
+                                    }
+                                    /* Watched */
+                                    .cxl-listoflessons li.watched:before {
+                                        left: -39px;
+                                        width: 17px;
+                                        height: 17px;
+                                        margin-top: -8px;
+                                        background: url("../img/cxl-icon-check-red.png") top center no-repeat;
+                                        background-size: 17px 17px;
+                                    }
+                                    /* /Watched */
+                                    /* Completed */
+                                    .cxl-listoflessons li.complete:before {
+                                        left: -39px;
+                                        width: 17px;
+                                        height: 17px;
+                                        margin-top: -8px;
+                                        background: url("../img/cxl-icon-play-gray.png") top center no-repeat;
+                                        background-size: 17px 17px;
+                                    }
+                                        .cxl-listoflessons li.complete:hover:before {
+                                            background: url("../img/cxl-icon-play-red.png") top center no-repeat;
+                                            background-size: 17px 17px;
+                                        }
+                                    /* /Completed */
+                                    .cxl-listoflessons h4 {
+                                        color: #2B2B2B;
+                                        font-size: 13px;
+                                        font-weight: 600;
+                                        padding: 16px 0 15px 0;
+                                    }
+                                        .cxl-listoflessons a:hover h4 {
+                                            color: #C61A00;
+                                        }
+                                        .cxl-listoflessons li:last-child h4 {
+                                            padding-bottom: 0;
+                                        }
+                                        .cxl-listoflessons small {
+                                            float: right;
+                                            color: #a0a0a0;
+                                            font-size: 10px;
+                                            padding-top: 2px;
+                                            margin: 0 18px 0 0;
+                                        }
+                                        .cxl-listoflessons span {
+                                            float: right;
+                                            color: #CDCDCD;
+                                            font-size: 10px;
+                                            line-height: 1em;
+                                            padding: 1px 3px;
+                                            margin-right: 8px;
+                                            border-radius: 4px;
+                                            border: 2px solid #CDCDCD;
+                                            text-transform: uppercase;
+                                        }
+                                            .cxl-listoflessons a:hover span {
+                                                color: #C61A00;
+                                                border: 2px solid #C61A00;
+                                            }
+                        /* /Level 3 */
+        /* /Lessons list */
+    /* /Content section */
+
+
+
+    /* Footer */
+    #cxl footer {
+        color: #FFFFFF;
+        padding: 108px 0 90px 0;
+        background: #121212;
+    }
+        .cxl-footer-links {
+            padding-left: 10px;
+            box-sizing: border-box;
+        }
+            .cxl-footer-links h3 {
+                height: 58px;
+                font-size: 16px;
+                font-weight: 900;
+                line-height: 1.5em;
+            }
+            .cxl-footer-links ul {}
+                .cxl-footer-links li {}
+                    .cxl-footer-links a {
+                        display: block;
+                        color: #FFFFFF;
+                        font-size: 12px;
+                        padding: 15px 0;
+                        font-weight: 400;
+                        position: relative;
+                        text-decoration: none;
+                    }
+                    .cxl-footer-links a:before {
+                        left: 0;
+                        width: 0;
+                        content: '';
+                        bottom: -2px;
+                        display: block;
+                        position: absolute;
+                        border-bottom: 4px solid #c72329;
+                        transition: width 0.2s ease-in-out;
+                    }
+                        .cxl-footer-links li a:hover:before {
+                            width: 100%;
+                        }
+    /* Footer */
+
+
+
+/* Media Queries */
+.cxl-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+@media only screen and (min-width: 1200px) {
+    #cxl-description {
+        margin: 30px auto;
+    }
+}
+/* /Media Queries */
