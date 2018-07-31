@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,600,700,900');
 /* ===============
     CXL institute
    =============== */
@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                 width: 135px;
                 font-size: 1px;
                 overflow: hidden;
-                margin-top: 16px;
+                margin: 16px 0 0 15px;
                 text-indent: -999999px;
                 background: url(../img/cxl-institute-logo.png) top center no-repeat;
                 background-size: 134px 30px;
@@ -70,18 +70,18 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 		}
             #cxl-account-name {
                 color: #FFFFFF;
-                font-size: 12px;
-                margin-top: 20px;
-                padding-right: 10px;
                 vertical-align: top;
                 display: inline-block;
+                padding: 15px 0 0 10px;
             }
                 #cxl-account-name h5 {
+                    font-size: 12px;
                     font-weight: 300;
                 }
                     #cxl-account-name span {
                         display: block;
                         font-weight: 700;
+                        padding-top: 5px;
                     }
 			#cxl-account-photo {
                 float: right;
@@ -123,6 +123,12 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 		#cxl-progress {
             background: #c61a00;
         }
+            #cxl-progress a {
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+                max-width: 65px;
+            }
             #cxl-progress span {
                 color: #FFFFFF;
                 font-weight: 900;
@@ -242,7 +248,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                     padding-top: 25px;
                 }
                     #cxl-lessoncontent p {
+                        font-size: 20px;
+                        line-height: 34px;
                         padding-bottom: 20px;
+                        font-family: Georgia, Times, "Times New Roman", serif;
                     }
                 /* /Lesson content */
             /* /Description */
@@ -256,7 +265,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
             box-shadow: 0 2px 4px 0 rgba(153,153,153,0.5);
         }
             #cxl-listofchapters {
-                padding: 9px 7px 0 0;
                 border-top: 10px solid #C61A00;
             }
                 /* Level 1 */
@@ -271,7 +279,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                             font-weight: 400;
                             padding: 22px 5px 22px 25px;
                             border-top: 1px solid #EDEDED;
-                            border-right: 1px solid #EDEDED;
                             border-bottom: 1px solid #EDEDED;
                         }
                         .cxl-listofchapters-track a.active h2 {
@@ -289,7 +296,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                             display: block;
                             padding: 15px 0 20px 0;
                             box-sizing: border-box;
-                            border-right:  1px solid #EDEDED;
+							border-top:  1px solid #EDEDED;
                             border-bottom: 1px solid #EDEDED;
                         }
                             .cxl-listofmodules-module-percent {
@@ -307,6 +314,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                                     color: #2F2F2F;
                                     font-size: 16px;
                                     font-weight: 700;
+									padding-bottom: 15px;
                                 }
                                     .cxl-listofmodules-module-promo small {
                                         display: block;
@@ -314,16 +322,28 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                                         font-size: 10px;
                                         margin-top: 4px;
                                         padding-left: 12px;
-                                        background: url("../img/cxl-icon-clock.svg") center left no-repeat;
+                                        background: url("../img/cxl-icon-clock.png") center left no-repeat;
                                         background-size: 9px 9px;
                                     }
                                         .cxl-listofmodules-module-promo span {}
+							.cxl-listofmodules-module-description {}
+								.cxl-listofmodules-module-description a {
+									display: block;
+									color: #666666;
+									font-size: 14px;
+									font-weight: 300;
+									line-height: 20px;
+									font-style: italic;
+									text-decoration: none;
+									padding: 15px 10px 15px 55px;
+									border-top:  1px solid #EDEDED;
+								}
                     /* /Level 2 */
                         /* Level 3 */
                         .cxl-listoflessons {
-                            margin-top: 15px;
                             position: relative;
                             padding-left: 55px;
+							margin-bottom: 20px;
                             border-top: 1px solid #EDEDED;
                         }
                             .cxl-listoflessons:before {
@@ -370,7 +390,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                                         background: url("../img/cxl-icon-play-gray.png") top center no-repeat;
                                         background-size: 17px 17px;
                                     }
-                                        .cxl-listoflessons li.complete:hover:before {
+                                        .cxl-listoflessons li.complete:before {
                                             background: url("../img/cxl-icon-play-red.png") top center no-repeat;
                                             background-size: 17px 17px;
                                         }
