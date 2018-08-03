@@ -17,14 +17,14 @@
     </head>
     <body>
         <div id="cxl">
-            <header class="pure-g">
+            <header>
                 <!-- Logo -->
-                <div id="cxl-logo" class="pure-u-10-24">
+                <div id="cxl-logo">
                     <h1>CXL Institute</h1>
                 </div>
                 <!-- /Logo -->
                 <!-- Search global -->
-                <div id="cxl-search" class="pure-u-5-24">
+                <div id="cxl-search">
                     <form>
                         <input type="text" placeholder="Search the Institute" aria-placeholder="Search the Institute" value=""/>
                         <button type="submit">Search</button>
@@ -32,29 +32,35 @@
                 </div>
                 <!-- /Search global-->
                 <!-- User Account -->
-                <div id="cxl-account" class="pure-u-3-24">
+                <div id="cxl-account">
                     <a href="#" title="TITLE_HERE">
+                        <!-- Name -->
                         <div id="cxl-account-name">
                             <h5>My account: <span>Peep Laja</span></h5>
                         </div>
+                        <!-- /Name -->
+                        <!-- Photo -->
                         <div id="cxl-account-photo">
                             <img src="./img/user-avatar.jpg" title="Peep Laja photo" alt="User profile picture" />
                         </div>
+                        <!-- /Photo -->
                     </a>
                 </div>
                 <!-- /User Account -->
-                <!-- Lesson Title and Duration -->
-                <div id="cxl-lesson" class="pure-u-5-24">
-                    <h2>Part of your learning path:<span>Growth Marketing Minidegree</span></h2>
-                </div>
-                <!-- /Lesson Title and Duration -->
-                <!-- Progress -->
-                <div id="cxl-progress" class="pure-u-1-24">
-                    <a id="cxl-progress-wrapper">
-                        <span id="cxl-progress-circle"></span>
+                <!-- Lesson Title and Progress -->
+                <div id="cxl-lesson">
+                    <a href="#" title="TITLE_HERE">
+                        <!-- Title -->
+                        <h2>Part of your learning path:<span>Growth Marketing Minidegree</span></h2>
+                        <!-- /Title -->
+                        <!-- Progress -->
+                        <div id="cxl-lesson-progress">
+                            <span id="cxl-lesson-progress-circle"></span>
+                        </div>
+                        <!-- /Progress -->
                     </a>
                 </div>
-                <!-- /Progress -->
+                <!-- /Lesson Title and Progress -->
             </header>
             <section>
                 <main>
@@ -324,7 +330,7 @@
                 // Documentation for Circliful
                 // GitHub url: https://github.com/pguso/jquery-plugin-circliful
                 //
-                $( "#cxl-progress-circle").circliful({
+                $( "#cxl-lesson-progress-circle").circliful({
                     foregroundColor: '#FFFFFF',
                     backgroundColor: '#CD422E',
                     animation: 1,
@@ -358,6 +364,12 @@
                     backgroundBorderWidth: 15,
                     percent: 40,
                     replacePercentageByText: ''
+                });
+
+                // Sidebar Show/Hide
+                $('#cxl-lesson a').click( function(event) {
+                    event.preventDefault();
+                    $('#cxl aside').slideToggle();
                 });
             });
         </script>

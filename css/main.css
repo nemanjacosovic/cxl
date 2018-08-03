@@ -28,6 +28,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 		height: 62px;
         overflow: hidden;
         background: #222222;
+        display: grid;
+        grid-template-columns: minmax(165px, 50%) minmax(330px, 1fr) 190px 280px;
     }
         /* Logo */
         #cxl-logo {}
@@ -68,6 +70,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
             box-sizing: border-box;
 			padding: 0 14px 0 30px;
 		}
+            /* Name */
             #cxl-account-name {
                 color: #FFFFFF;
                 vertical-align: top;
@@ -83,6 +86,8 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                         font-weight: 700;
                         padding-top: 5px;
                     }
+            /* /Name */
+            /* Photo */
 			#cxl-account-photo {
                 float: right;
                 width: 35px;
@@ -98,42 +103,50 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
                     height: auto;
                     display: block;
                 }
+            /* /Photo */
         /* /User account */
-        /* Lesson Title and Duration */
+        /* Lesson Title and Progress  */
         #cxl-lesson {
-            height: 100%;
-            color: #FFFFFF;
-            padding-left: 15px;
-            box-sizing: border-box;
-            border-left: 1px solid #222222;
+
+            border-left: 1px solid #000000;
         }
-            #cxl-lesson h2 {
-                font-size: 12px;
-                font-weight: 300;
-                padding-top: 15px;
-            }
-                #cxl-lesson span {
-                    display: block;
-                    font-size: 12px;
-                    padding-top: 5px;
-                    font-weight: 700;
-                }
-        /* /Lesson Title and Duration */
-		/* Progress */
-		#cxl-progress {
-            background: #c61a00;
-        }
-            #cxl-progress a {
+            #cxl-lesson a {
                 width: 100%;
-                display: block;
-                margin: 0 auto;
-                max-width: 65px;
+                height: 100%;
+                text-decoration: none;
+                display: grid;
+                grid-template-columns: minmax(200px, 278px) 66px;
             }
-            #cxl-progress span {
-                color: #FFFFFF;
-                font-weight: 900;
-            }
-        /* /Progress */
+                /* Title */
+                #cxl-lesson h2 {
+                    color: #FFFFFF;
+                    font-size: 12px;
+                    font-weight: 300;
+                    vertical-align: top;
+                    display: inline-block;
+                    padding: 14px 0 0 15px;
+                }
+                    #cxl-lesson span {
+                        display: block;
+                        font-size: 12px;
+                        padding-top: 5px;
+                        font-weight: 700;
+                    }
+                /* /Title */
+                /* Progress */
+                #cxl-lesson-progress {
+                    background: #c61a00;
+                    display: inline-block;
+                }
+                    #cxl-lesson-progress span {
+                        color: #FFFFFF;
+                        width: 72px;
+                        font-weight: 900;
+                        margin: -10px auto 0 -4px;
+                    }
+                        #cxl-lesson-progress-circle {}
+                /* /Progress */
+        /* /Lesson Title / Duration / Progress */
     /* /Header */
 
 
@@ -141,15 +154,15 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
     /* Content section */
     #cxl section {
         width: 100%;
-        display: grid;
+        font-size: 0;
         background: #fcfafa;
-        grid-template-columns: 1fr 344px;
     }
         /* Main content */
         #cxl main {
-            width: 100%;
             background: #fcfafa;
+            vertical-align: top;
             display: inline-block;
+            width: calc(100% - 344px);
         }
             /* Breadcrumb */
             #cxl-breadcrumb {
@@ -259,8 +272,9 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
         /* Lessons list */
         #cxl aside {
             width: 344px;
+            margin: 0 0 80px 0;
             background: #FFFFFF;
-            margin-bottom: 80px;
+            vertical-align: top;
             display: inline-block;
             box-shadow: 0 2px 4px 0 rgba(153,153,153,0.5);
         }
